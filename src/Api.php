@@ -45,7 +45,6 @@ class Api extends AbstractAPI
 
     }
 
-
     /**
      * @param array $params 应用参数
      * @return array
@@ -59,13 +58,4 @@ class Api extends AbstractAPI
 
         return $headers;
     }
-//   // 此处header如何加入
-//    public function middlewares()
-//    {
-//        $headers['md5'] = md5(json_encode($params));
-//        $this->http->addMiddleware($this->headerMiddleware([
-//            'timestamp' => now(),
-//            'md5'
-//        ]));
-//    }
 }
